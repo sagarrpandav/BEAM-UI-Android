@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BeamINC</string>
+    <string name="ip_address">http://35.200.170.107:5000</string>
+</resources>

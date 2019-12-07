@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mrunal.beaminc.Dashboard_client">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="#fff"
+        android:elevation="16dp"
+
+        android:background="#f9d0aa">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Main_Welcome"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#87212121"
+                android:elevation="16dp"
+                android:fontFamily="serif"
+                android:padding="15dp"
+                android:text="Welcome
+Client"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_campaigns"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="18"
+                        android:textColor="#fff"
+                        android:textSize="30dp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Total campaigns"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_images"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="28"
+                        android:textColor="#fff"
+                        android:textSize="30dp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Total Images"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_videos"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="18"
+                        android:textColor="#fff"
+                        android:textSize="30dp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Total Videos"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_files"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:textSize="30dp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Total  Files"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Your Projectors:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:columnWidth="50dp"
+                android:elevation="9dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:scrollbarStyle="outsideOverlay"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fab"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorAccent"
+                    android:backgroundTint="@color/colorPrimary"
+
+                    android:elevation="16dp"
+                    android:text="ADD CAMPAIGN" />
+
+                <Button
+                    android:id="@+id/btn_view_campaign_list"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/colorAccent"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:elevation="16dp"
+                    android:text="CAMPAIGN LIST" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/request"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/colorAccent"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:elevation="16dp"
+
+                    android:gravity="center"
+                    android:text="Requests" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Live Campaigns:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <ListView
+                android:id="@+id/lv_live_campaigns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"></ListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

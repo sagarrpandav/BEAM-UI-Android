@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RentProjector_List">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:text="All List"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                 android:layout_height="250dp"
+                android:id="@+id/lv_all_list_projectors"
+                android:layout_marginTop="15dp">
+
+            </ListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:text="Rented List"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/lv_rented_list_projectors"
+                android:layout_marginTop="15dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

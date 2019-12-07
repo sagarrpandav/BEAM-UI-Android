@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    tools:context="com.example.mrunal.beaminc.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_layout">
+
+        <ImageView
+            android:id="@+id/logo_login"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:fontFamily="casual"
+            android:src="@mipmap/login_logo"
+            android:text="Login"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textLogin"
+            android:text="Login"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editLmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linear_layout"
+        android:layout_marginTop="46dp"
+        android:hint="Mobile"
+        android:backgroundTint="#fff"
+        android:inputType="phone"
+        android:paddingTop="30dp"
+        android:textColor="@color/colorAccent"
+        android:textCursorDrawable="@color/colorAccent"/>
+
+    <EditText
+        android:id="@+id/editLPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editLmobile"
+        android:layout_marginTop="26dp"
+        android:hint="Password"
+        android:backgroundTint="#fff"
+        android:inputType="textPassword"
+        android:paddingTop="30dp"
+        android:textColor="@color/colorAccent"
+        android:textCursorDrawable="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editLPassword"
+        android:layout_marginTop="46dp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:text="Login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonLogin">
+
+        <TextView
+            android:id="@+id/textDonthaveanaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Don't have an account?" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textRegister"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorAccent"
+            android:text="Register" />
+    </LinearLayout>
+
+</RelativeLayout>
